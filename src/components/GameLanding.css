@@ -1,0 +1,53 @@
+.game-presentation {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align:center;
+}
+
+.instructions{
+    font-size: 1.5rem;
+    margin: 20px auto;
+}
+
+.three-image-container {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    margin: 25px 60px;
+}
+
+.image-xs-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.image-xs {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    max-width: 30rem;
+    margin: auto;
+    object-fit: cover; 
+    opacity: 0.75;
+    background-color: black;    
+}
+
+.image-xs:hover {
+    opacity: 0.95;
+}     
+
+.image-name{
+   display: flex;
+   justify-content: center;
+   margin: 15px;
+   font-size: x-large;
+}
+
+.space {
+    display: flex;
+    width: 100px;
+    max-width: 100px;
+}

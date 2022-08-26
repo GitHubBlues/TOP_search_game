@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@200;300;400;500&display=swap');
+
+.header {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.title {
+    font-family: Gluten;
+    font-size: 5rem;
+    font-weight: 200;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+button {
+    position: absolute;
+    right: 40px;
+    width: 150px;
+    height: 40px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    color: white;
+    background-color: #282c34;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: large
+}    
+
+button:hover {
+    border: 3px solid white;
+    width: 160px;
+    height: 43px;
+    right: 35px;
+} 

@@ -5,8 +5,10 @@ import './Footer.css'
 export default function Footer() {
   return (
     <div className="footer">
-        Made by GitHubBlues {"\u00a0"} 
-        < GoMarkGithub />
+        Made by {"\u00a0"} 
+        <a href="https://github.com/GitHubBlues?tab=repositories">
+        GitHubBlues {"\u00a0"} 
+        < GoMarkGithub /></a>
     </div>
   )
 }
