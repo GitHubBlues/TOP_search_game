@@ -9,17 +9,8 @@ import picture3 from '../assets/Motiv1-Baustelle-Badesee1600x1200px.jpg';
 
 export default function GameLanding() {
 
-    // function getData(){
-    //     const dataRaw = collection(db, "data_xy");
-    //     getDocs(dataRaw).then(response =>{
-    //     console.log(response.docs)
-    //     }).catch(error => console.log(error.message))
-    // }
-
     return(
     <div className="game-presentation">
-        {/* { getData() } */}
-        
         <p className="instructions">Find 6 hidden objects in each picture. And be fast, so you reach the first place in the leaderboard.<br />Good luck!</p>
         
         <div className="three-image-container">
@@ -40,6 +31,7 @@ export default function GameLanding() {
             </div>
             <div className="space"></div>
         </div> 
+        
     </div>
 
     )
