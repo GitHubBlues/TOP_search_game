@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@200;300;400;500&display=swap');
 @import-normalize;
 
-.main-page {
+:root {
+  --black-color: rgb(40, 40, 40);
+  --white-color: rgb(240, 240, 240);
+}
+
+.main-page, 
+.leaderboard-page, 
+.game-page {
   display: flex;
   flex-direction: column;
-  background-color: #282c34;
+  background-color: var(--black-color);
   min-height: 100vh;
   box-sizing: border-box;
 }

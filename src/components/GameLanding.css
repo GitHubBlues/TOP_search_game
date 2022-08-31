@@ -1,7 +1,9 @@
+@import "../App.css";
+
 .game-presentation {
     display: flex;
     flex-direction: column;
-    color: white;
+    color: var(---white-color);
     text-align:center;
 }
 
@@ -32,7 +34,7 @@
     margin: auto;
     object-fit: cover; 
     opacity: 0.75;
-    background-color: black;    
+    background-color: var(---black-color);
 }
 
 .image-xs:hover {
