@@ -1,0 +1,96 @@
+@import "../App.css";
+
+.leaderboard {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+ 
+.leaderboard .title{
+    display: flex;
+    justify-content: center;
+    font-family: Gluten;
+    font-size: 3rem;
+    font-weight: 200;
+    color: var(--white-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+
+.leaderboard .instructions {
+    font-size: 1.5rem;
+    margin: 20px auto;
+    color: var(--white-color);
+}
+
+table {
+    overflow-x:auto;
+    color: var(--white-color);
+    table-layout: fixed;
+    width: 1000px;
+    border-collapse: collapse;
+    border: 3px solid rgb(105, 62, 105);
+}
+ 
+.row-table-header {
+   height: 25px;
+   padding: 50px;
+   border: 3px solid rgb(105, 62, 105);
+}
+
+.cell-table-header {
+   font-size: 1.5rem;
+   color: var(--white-color);
+   padding: 15px;
+}
+
+.cell-table-body {
+   font-size: 1.3rem;
+   font-weight: 400;
+   padding: 8px; 
+}
+
+ /* Dropdown Button */
+.dropbtn {
+   font-size: 1.5rem;
+   color: var(--white-color);
+   padding: 15px;
+   border: none;
+   background-color: var(--black-color)
+}
+  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    /* display: inline-block; */
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: rgb(150,150,150);
+   color: white;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+   padding: 5px;
+}
+  
+.item {
+    padding: 5px;  
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content .item:hover {
+   background-color: #ddd;
+}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+   display: block;
+}
+
+.icon {
+   margin: auto;
+}
