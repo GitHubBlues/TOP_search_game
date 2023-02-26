@@ -13,5 +13,6 @@
   flex-direction: column;
   background-color: var(--black-color);
   min-height: 100vh;
+  min-width: 100vw;
   box-sizing: border-box;
 }
