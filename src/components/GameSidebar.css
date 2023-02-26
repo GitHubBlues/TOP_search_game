@@ -1,0 +1,32 @@
+@import "../App.css";
+
+.panel {
+    flex-direction:column;
+    width: 200px;
+    color: var(--white-color);
+    /* border: 2px solid green; */
+}
+
+h3 {
+    color: var(--white-color);
+    margin: 10px auto;
+    text-align: center;
+}
+
+.all-items {
+    /* border: 2px solid red; */
+}
+
+.item {
+    border: 0.2px dotted grey;
+}
+
+.item img {
+    display: flex;
+    margin: 0 auto;
+}
+
+.item p {
+    text-align: center;
+    margin: 2px auto 7px auto;
+}
