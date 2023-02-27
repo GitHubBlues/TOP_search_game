@@ -40,12 +40,12 @@ const generateGameData = () => {
         src : picture2,
         alt:  "at the sea",
         items: [ 
-            { src: i2_01, key: i2_01, found: false, name: "bear", x: 1138, y: 587 },
+            { src: i2_01, key: i2_01, found: false, name: "bear", x: 1138, y: 630 },
             { src: i2_02, key: i2_02, found: false, name: 'coala', x: 200, y: 588 },
-            { src: i2_03, key: i2_03, found: false, name: "flower", x: 1522, y: 230 },
-            { src: i2_04, key: i2_04, found: false, name: "flower", x: 605, y: 673 },
-            { src: i2_05, key: i2_05, found: false, name: "table", x: 1205, y: 98 },
-            { src: i2_06, key: i2_06, found: false, name: "hat", x: 1284, y: 789 }
+            { src: i2_03, key: i2_03, found: false, name: "flower", x: 605, y: 703 },
+            { src: i2_04, key: i2_04, found: false, name: "flower", x: 1522, y: 230 },
+            { src: i2_05, key: i2_05, found: false, name: "table", x: 1205, y: 115 },
+            { src: i2_06, key: i2_06, found: false, name: "hat", x: 1284, y: 829 }
         ]    
     }},
     {image3: {
