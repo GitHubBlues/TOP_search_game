@@ -10,6 +10,8 @@
 .instructions{
     font-size: 1.5rem;
     margin: 20px auto;
+    color:Lavender;
+    line-height: 1.4;
 }
 
 .three-image-container {
@@ -39,6 +41,11 @@
 
 .image-xs:hover {
     opacity: 0.95;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }     
 
 .image-name{
