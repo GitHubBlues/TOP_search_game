@@ -2,11 +2,15 @@
 
 .popup {
     display: flex;
-    background-color: lime;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: silver;
     position: relative;
-    /* top: -100px;
-    left: 100px;  */
-    min-width: 200px;
-    height: 100px;
-    z-index: 10;     
+    width: 130px;
+    height: 60px;
+    z-index: 10;    
+    color: black;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.5;
 }
