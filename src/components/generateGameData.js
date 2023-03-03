@@ -44,7 +44,7 @@ const generateGameData = () => {
             { src: i2_02, key: i2_02, found: false, name: 'coala', x: 200, y: 588 },
             { src: i2_03, key: i2_03, found: false, name: "flower", x: 605, y: 703 },
             { src: i2_04, key: i2_04, found: false, name: "flower", x: 1522, y: 230 },
-            { src: i2_05, key: i2_05, found: false, name: "table", x: 1205, y: 115 },
+            { src: i2_05, key: i2_05, found: false, name: "table", x: 1205, y: 140 },
             { src: i2_06, key: i2_06, found: false, name: "hat", x: 1284, y: 829 }
         ]    
     }},
