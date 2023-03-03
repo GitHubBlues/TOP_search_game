@@ -1,0 +1,42 @@
+@import "../App.css";
+
+.inputScore {
+    display: flex;
+    flex-direction: column;
+    background-color:tan;
+    position: fixed;
+    /* margin: auto; */
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -450px;
+    width: 900px;
+    height: 500px;
+    z-index: 15;     
+}
+
+.popup1,
+.popup2,
+.popup3 {
+    display: flex;
+    font-size: 30px;
+    margin: 20px 50px;
+}
+
+.inputbox {
+    display: flex;
+    /* flex-direction: row; */
+}
+
+label {
+    display: flex;
+    margin: 20px 50px;
+    font-size: 30px;
+}
+
+#inputPlayer {
+    display: flex;
+    margin: 10px 50px;
+    width: 200px;
+    font-size: 30px;
+}    
