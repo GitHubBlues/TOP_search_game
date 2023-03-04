@@ -10,11 +10,8 @@ import './GameScreen.css';
 export default function GameScreen() {
     const location = useLocation()
     const { imageNr } = location.state
-    
-    console.log(imageNr)
-
     const initialDB = generateGameData();
-    //let imageNr = 0;
+
     let tmp
     if (imageNr === 0){
         tmp = initialDB[0].image1;
@@ -31,9 +28,7 @@ export default function GameScreen() {
     const [message, setMessage] = useState( ["Unsuccsessful attempt"] ) 
     const [startTimer, setStartTimer] = useState( Date.now() ) 
     const [elapsedTime, setElapsedTime] = useState( Date.now() ) 
-    console.log(startTimer);
-    // const timerStart = Date.now();
-    // console.log("timerstart", timerStart);
+    const [moveYCoord, setMoveYCoord] = useState( false )
    
     function checkTargetFound( [playerX, playerY]) {
         let image = document.querySelector('.image-xl');
@@ -46,8 +41,10 @@ export default function GameScreen() {
                 setToSearch(updatedToSearch)
                 setMessage( item.name + " found");
             }
-            console.log(item.x/1600, playerX/image.offsetWidth, playerX, image.offsetWidth)
-            console.log(item.y/1200, playerY/image.offsetHeight, playerY, image.offsetHeight)
+
+            if (image.offsetHeight-playerY < 70) {
+                setMoveYCoord( true )
+            }
         })
 
     }
@@ -57,50 +54,24 @@ export default function GameScreen() {
         let playerX = e.pageX - 200;
         let playerY = e.pageY;
         
+        setMoveYCoord( false )
         checkTargetFound( [playerX, playerY] )
         setClickXY([playerX, playerY])
         setModal(true)
-        // console.log(clickXY);
-        // console.log("rajacounte0")
-        console.log("rajacounte1")
     }
 
     useEffect(() => {
         let counter = 0;
         toSearch.forEach( (item) =>{
              if (item.found==true) counter=counter+1;
-             console.log("inside", item.name, counter)
-             console.log(Date.now())
         })  
          if ( counter==6 ) {
-             console.log("queonda")
              setEnterName(true)
-             console.log("entername ", enterName)
              const timerEnd = Date.now() ;
              setElapsedTime((timerEnd-startTimer)/1000);
-             console.log(timerEnd-startTimer)
         }; 
     }, [toSearch]);
 
-
-    // function testEndOfGame() {
-    //     console.log(toSearch)
-    //     let counter = 0;
-    //     toSearch.forEach( (item) =>{
-    //         if (item.found==true) counter=counter+1;
-    //         console.log("inside", item.name, counter)
-    //     })
-    //     console.log("rajacounte", counter)
-    //     if ( counter==6 ) {
-    //         console.log("queonda")
-    //         setEnterName(true)
-    //         console.log("entername ", enterName)
-    //     };   
-    // }
-
-    function enterScore() {
-
-    }
 
     return(
         <div className="game">
@@ -109,7 +80,7 @@ export default function GameScreen() {
             <div className = "image-container">
                 <GameImage src={ tmp.src } alt={ tmp.alt } items={ toSearch } handleClick={ getPopUp } />
                 { modal &&
-                <PopUp coord={ clickXY } message={ message } />
+                <PopUp coord={ clickXY } message={ message } moveY={ moveYCoord } />
                 }
             </div>    
                 { enterName &&

@@ -1,16 +1,17 @@
 @import "../App.css";
 
 .popup {
-    display: flex;
+    display: inline-block;
     border: 2px solid black;
     border-radius: 5px;
     background-color: silver;
     position: relative;
-    width: 130px;
-    height: 60px;
+    width: 150px;
+    height: 65px;
     z-index: 10;    
     color: black;
     padding: 10px;
     text-align: center;
+    vertical-align: middle;
     line-height: 1.5;
 }
