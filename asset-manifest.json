@@ -1,7 +1,7 @@
 {
   "main.css": "/TOP_search_game/static/css/main.cfc21bd9.chunk.css",
-  "main.js": "/TOP_search_game/static/js/main.01e31fba.chunk.js",
-  "main.js.map": "/TOP_search_game/static/js/main.01e31fba.chunk.js.map",
+  "main.js": "/TOP_search_game/static/js/main.d173efb4.chunk.js",
+  "main.js.map": "/TOP_search_game/static/js/main.d173efb4.chunk.js.map",
   "static/js/1.82f3f0cc.chunk.js": "/TOP_search_game/static/js/1.82f3f0cc.chunk.js",
   "static/js/1.82f3f0cc.chunk.js.map": "/TOP_search_game/static/js/1.82f3f0cc.chunk.js.map",
   "static/js/2.6bf66e94.chunk.js": "/TOP_search_game/static/js/2.6bf66e94.chunk.js",
@@ -31,6 +31,6 @@
   "static/media/Motiv3-star.png": "/TOP_search_game/static/media/Motiv3-star.3ad7f59f.png",
   "static/css/main.cfc21bd9.chunk.css.map": "/TOP_search_game/static/css/main.cfc21bd9.chunk.css.map",
   "index.html": "/TOP_search_game/index.html",
-  "precache-manifest.8f3521a585bfaf772095068de792c236.js": "/TOP_search_game/precache-manifest.8f3521a585bfaf772095068de792c236.js",
+  "precache-manifest.4564507f4b942fc26e60ab42a1083769.js": "/TOP_search_game/precache-manifest.4564507f4b942fc26e60ab42a1083769.js",
   "service-worker.js": "/TOP_search_game/service-worker.js"
 }

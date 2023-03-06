@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "01e31fba05db95cb25f3",
+    "revision": "d173efb41cc4d887162c",
     "url": "/TOP_search_game/static/css/main.cfc21bd9.chunk.css"
   },
   {
-    "revision": "01e31fba05db95cb25f3",
-    "url": "/TOP_search_game/static/js/main.01e31fba.chunk.js"
+    "revision": "d173efb41cc4d887162c",
+    "url": "/TOP_search_game/static/js/main.d173efb4.chunk.js"
   },
   {
     "revision": "82f3f0cc799277e00c27",
@@ -104,7 +104,7 @@ self.__precacheManifest = [
     "url": "/TOP_search_game/static/media/Motiv3-star.3ad7f59f.png"
   },
   {
-    "revision": "e666537e8327108edff6319ec362fe74",
+    "revision": "9ff05338b11e19e61b6c91dc370bdf28",
     "url": "/TOP_search_game/index.html"
   }
 ];
