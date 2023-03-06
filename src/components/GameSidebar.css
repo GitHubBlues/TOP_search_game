@@ -12,10 +12,6 @@ h3 {
     text-align: center;
 }
 
-.all-items {
-    /* border: 2px solid red; */
-}
-
 .item {
     border: 0.2px dotted grey;
 }

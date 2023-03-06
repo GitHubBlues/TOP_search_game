@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: row;
     max-width: 100vw;
-    /* border: 10px solid blue;  */
 }
 
 .image-container {
@@ -14,5 +13,4 @@
     box-sizing: border-box;
     display: flex;
     width: calc(100% - 200px);
-    /* border: 2px solid red;  */
 }

@@ -33,7 +33,7 @@ export default function GameScreen() {
     function checkTargetFound( [playerX, playerY]) {
         let image = document.querySelector('.image-xl');
         let updatedToSearch = JSON.parse(JSON.stringify(toSearch));
-        setMessage( "Unsuccsessful attempt" );
+        setMessage( "OOPS  :(" );
 
         updatedToSearch.forEach( (item) =>{ 
             if ( (Math.abs(item.x/1600 - playerX/image.offsetWidth)<0.023) && (Math.abs(item.y/1200 - playerY/image.offsetHeight)<0.023) ) {

@@ -1,6 +1,4 @@
 import React from "react";
-import { collection, getDocs } from "firebase/firestore";
-import { db } from "../lib/init-firebase.js";
 import { Link } from "react-router-dom";
 import './GameLanding.css'
 
