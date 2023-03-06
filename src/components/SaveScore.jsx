@@ -22,11 +22,13 @@ export default function SaveScore( props ) {
         }
     
         try {
-            await addDoc(collection(db, "data_scores"), {
-                image: imageSet,
-                name: nameSet,
-                time: timeSet
-            });
+            if (nameSet.length > 0 ) {
+                await addDoc(collection(db, "data_scores"), {
+                    image: imageSet,
+                    name: nameSet,
+                    time: timeSet
+                });
+            }
         } catch(e) {
             console.error(e);  
         }
@@ -38,11 +40,13 @@ export default function SaveScore( props ) {
     return (
         <div className="inputScore">
             <div className="popup1" > Congratulations! </div>
-            <div className="popup2" > You found all hiiden objects in { props.timer } seconds </div>
-            <div className="popup3" > Enter your name to become immortalized in the leaderboard</div>
+            <div className="popup2" > You found all hidden objects in { props.timer } seconds. </div>
+            <div className="popup3" > Enter your name to become immortalized in the leaderboard.</div>
             <div className="inputbox">
-                <label htmlFor="inputPlayer"> Name </label>
+                <label htmlFor="inputPlayer"> Name: </label>
                 <input id="inputPlayer" type="text"/>
+            </div>
+            <div className="buttonContainer">
                 <button id="saveBtn" onClick={ saveToDatabase } >save</button>
             </div>
         </div>
