@@ -1,4 +1,4 @@
-# **Where's Waldo type serch game**
+# **Where's Waldo type search game**
 
 ## ***Brief description***
 This is a photo tagging app where the player needs to find 6 specific elements in a crowded picture. 
